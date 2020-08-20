@@ -1,0 +1,88 @@
+use userregistration;
+
+
+create table supplier
+(
+sid varchar(20),
+name varchar(50),
+phone numeric,
+address varchar(255),
+vehicle varchar(255),
+primary key(sid)
+);
+
+
+create table supermarket
+(
+cin varchar(20),
+name varchar(50),
+phone numeric,
+address varchar(255),
+sid varchar(20),
+primary key(cin),
+foreign key(sid) references supplier(sid)
+);
+
+
+create table dept
+(
+	dno varchar(20),
+	dname varchar(50),
+	total_emp numeric,
+	cin varchar(20),
+	primary key(dname),
+	foreign key(cin) references supermarket(cin)
+);
+
+
+create table emp
+(
+	eid varchar(20),
+	fn varchar(50),
+	ln varchar(50),
+	gender varchar(10),
+	phone numeric,
+	designation varchar(50),
+	salary numeric,
+	cin varchar(20),
+	dname varchar(50),
+	primary key(eid),
+	foreign key(cin) references supermarket(cin),
+	foreign key(dname) references dept(dname)
+);
+
+
+create table product
+(
+	pid varchar(20),
+	pname varchar(50),
+	mfd date,
+	exp date,
+	company  varchar(50),
+	stock numeric,
+	price numeric,
+	dname varchar(50),
+	primary key(pid),
+	foreign key(dname) references dept(dname)
+); 
+
+
+create table customer
+(
+	cid varchar(20),
+	name varchar(50),
+	phone numeric,
+	address varchar(255),
+	total_purchases numeric,
+	primary key(cid)
+);
+
+
+create table purchases
+(
+	cid varchar(20),
+	pid varchar(20),
+	primary key(cid,pid),
+	foreign key(cid) references customer(cid),
+	foreign key(pid) references product(pid)
+);

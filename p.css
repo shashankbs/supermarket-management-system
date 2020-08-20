@@ -1,0 +1,66 @@
+body{
+  background-image: url(shop.jpg);
+  background-size: cover;
+}
+.box
+{
+  height: 320px;
+  width: 400px;
+  background: rgba(0,0,0,0.8);
+  top: 60%;
+  left: 20%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 10px 5px;
+}
+.avatar{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: calc(50% - 50px);
+}
+.box p{
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+h1{
+  color: white;
+  position: static;
+  padding-left: 10%;
+
+}
+.box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.btn{
+  height: 40px;
+  width: 200px;
+  border-radius: 20%;
+  background-color: maroon;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+.box button:hover{
+  color: black;
+}
