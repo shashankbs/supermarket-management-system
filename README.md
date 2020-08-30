@@ -12,7 +12,7 @@ Supermarket Management System is a web-based application which aims at automatio
 
 ![DB View](https://github.com/shashankbs/supermarket-management-system/blob/master/Screenshots/5.5.PNG?raw=true)
 
-###  Requirements:
+##  Requirements:
 <ul>
 <li> HTML & CSS
 
@@ -23,7 +23,7 @@ Supermarket Management System is a web-based application which aims at automatio
 <li> WAMP Server
 </ul>
 
-### User Story:
+## User Story:
 
 <ul>
 <li> User is able to sign in, sign out, and sign up 
