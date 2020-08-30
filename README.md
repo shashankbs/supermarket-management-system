@@ -3,7 +3,7 @@
 Supermarket Management System is a web-based application which aims at automation of various management procedures such as managing sales and purchases,stock details,employee details etc.
 
 ### Project Screenshots:
-
+---
 ![Login page](https://github.com/shashankbs/supermarket-management-system/blob/master/Screenshots/5.1.PNG?raw=true)
 
 ![Home page](https://github.com/shashankbs/supermarket-management-system/blob/master/Screenshots/homepg.PNG?raw=true)
