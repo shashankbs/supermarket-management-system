@@ -25,12 +25,14 @@ Supermarket Management System is a web-based application which aims at automatio
 
 ### User Story:
 
-&#9679; User is able to sign in, sign out, and sign up
+<ul>
+<li> User is able to sign in, sign out, and sign up 
 
-&#9679; User is able to add product, employees, and customers
+<li> User is able to add product, employees, and customers
 
-&#9679; User is able to update the price and department for an inventory
+<li> User is able to update the price and department for an inventory
 
-&#9679; User is able to look up all the details in the database
+<li> User is able to look up all the details in the database
+</ul>
 
 
